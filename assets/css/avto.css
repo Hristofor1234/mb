@@ -1,0 +1,242 @@
+main .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+    position: relative;
+    max-height: 400px;
+}
+
+main .inner_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+    position: relative;
+}
+
+main a {
+    text-align: center;
+    display: block;
+    padding: 11px ;
+}
+
+main .container .photo {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+main .container .photo h2 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 2;
+    margin-left: 40px;
+    margin-top: 13%;
+}
+
+main .container .photo h2::before {
+    content: '';
+    display: block;
+    width: 72px;
+    height: 3px;
+    background-color: currentColor;
+    position: absolute;
+    top: -28px;
+    left: 0;
+}
+
+main .container .photo img {
+    width: 100%;
+    height: 60%;
+}
+
+main .container .photo.show {
+    display: flex;
+    opacity: 1;
+}
+
+main .button {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+}
+
+main .button button {
+    margin: 10px;
+    width: 30px;
+    height: 3px;
+}
+
+#bt1 {
+    color: #0082c6
+}
+
+main .filter_amg {
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+main .filter_amg button {
+    background: white;
+    padding: 1rem;
+    font-family: Cactus Classical Serif, serif;
+}
+
+main .filter_amg button:hover {
+    color: #00adef;
+}
+
+main .filter {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.1rem;
+    border-top: 1px solid #ddd;
+}
+
+main .filter button {
+    background-color: white;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+main .filter button:hover {
+    color: #00adef;
+}
+
+main .button {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+}
+
+main .button button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    width: 45px;
+    height: 42px;
+
+}
+
+main .button button > span {
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+main .button button:hover {
+    cursor: pointer;
+}
+
+#bt1 {
+    color: #0082c6;
+    gap: 30px;
+}
+
+main .class_list_not_amg.hiden, main .help.hiden {
+    display: none;
+}
+
+main .sedan, main .kupe, main .vnedoroznik, main .sedan_long, main .miniven, main .universal, main .kupe_4-door {
+    border-top: 1px solid black;
+    color: black;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main .avto {
+    width: 228px;
+    height: 228px;
+    padding: 0 15px;
+}
+
+main .class_img img {
+    width: 198px;
+    height: 115px;
+}
+
+main .avto a > p{
+    margin-bottom: 5px;
+    text-align: start;
+}
+
+main .avto a > .price{
+    margin-bottom: 50px;
+}
+
+main .help > h3 {
+    background-color: white;
+    color: black;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+
+    main .container .photo h2 {
+        display: none;
+    }
+
+    main .container .photo h2::before {
+        display: none;
+    }
+
+    main div.button {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    main .filter {
+        display: none;
+    }
+
+    main .filter_amg {
+        justify-content: start;
+        margin-bottom: 10px;
+    }
+
+    main .margin > h3 {
+        text-align: left;
+    }
+
+    main .inner_container {
+        width: 390px;
+    }
+
+    main .sedan, main .kupe, main .vnedoroznik, main .sedan_long, main .miniven, main .universal, main .kupe_4-door {
+        grid-template-columns: 0fr 0fr;
+    }
+
+    main .avto {
+        max-width: 50%;
+    }
+
+    main .class_img img{
+        max-width: 110%;
+    }
+}

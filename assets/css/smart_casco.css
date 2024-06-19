@@ -1,0 +1,101 @@
+main .container {
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main .info_finance {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main .info_finance a:hover {
+    color: #00adef;
+}
+
+main hr {
+    width: 1024px;
+    background-color: #dddddd;
+    margin: 0;
+}
+
+main .img img {
+    width: 1024px;
+    height: 400px;
+}
+
+main .info_casco {
+    padding: 30px;
+}
+
+main .info_casco .casco_header {
+    margin-bottom: 60px;
+    margin-top: 30px;
+    font-family: Cactus Classical Serif, serif;
+}
+
+main ul {
+    list-style: unset;
+    margin-bottom: 55px
+}
+
+main .casco_main a {
+    color: #00adef;
+}
+
+
+@media screen and (max-width: 600px){
+
+    main .info_finance {
+        display: grid;
+    }
+
+    main .container {
+        max-width: 390px;
+        padding: 10px;
+    }
+
+    main .product {
+        display: block;
+    }
+
+    main .info {
+        grid-column-start: 1;
+    }
+
+    main img {
+        max-width: 360px;
+        max-height: 170px;
+    }
+
+    main .casco_main p {
+        max-width: 340px;
+    }
+
+    main p, ul {
+        font-size: 20px;
+    }
+
+    main ul {
+        max-width: 350px;
+        padding-right: 200px;
+    }
+
+    main .mobile {
+        max-width: 346px;
+    }
+
+    footer .location h3 {
+        margin-left: 5.4rem;
+    }
+
+    hr {
+        display: none;
+    }
+}

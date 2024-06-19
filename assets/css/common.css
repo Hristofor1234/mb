@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+}
+
+h1, h2, p, ul {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    top: 2rem;
+    box-shadow: 0 2px 2px rgb(0 0 0 / .15);
+    z-index: 2;
+
+}
+
+header .brand img {
+    height: 70px;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+header .brand .mobile img  {
+    display: none;
+}
+
+header .brand a::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 41px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 65px;
+    left: 35vw;
+}
+
+header .connect {
+    height: 28px;
+    display: grid;
+    margin-left: auto;
+    margin-top: 4.5rem;
+}
+
+header .name, header .phone {
+    line-height: 2;
+}
+
+header .phone a {
+    color: #00adef;
+}
+
+header .connect .name, header .connect .phone {
+    text-align: right;
+}
+
+header .header_menu {
+    margin-top: 70px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 50%;
+    border-radius: 1px;
+}
+
+header nav {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    gap: 3rem;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    text-align: center;
+}
+
+header nav ul a:hover {
+    color: #0082c6;
+}
+
+header .header_menu nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 1100px;
+    margin-top: 3rem;
+}
+
+footer {
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-top: 5rem;
+    border-top: 1px;
+    font-size: 14px;
+}
+
+footer .brand_info {
+    width: 300px;
+}
+
+footer .time_jobs {
+    width: 382px;
+}
+
+footer .location {
+    width: 341px;
+}
+
+footer .brand_info h3 {
+    margin-bottom: 3.4rem;
+}
+
+footer .brand_info h3::before {
+    content: '';
+    display: block;
+    width: 78px;
+    height: 1px;
+    position: relative;
+    bottom: 10px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+footer .brand_info p {
+
+}
+
+footer .brand_info a {
+    margin-bottom: 3rem;
+    color: #00adef;
+}
+
+footer .brand_info ul {
+    padding: 0;
+}
+
+footer .brand_info ul li {
+    padding-bottom: 3rem;
+}
+
+footer .time_jobs h3 {
+    margin-bottom: 3.4rem;
+    margin-left: 3rem;
+}
+
+footer .time_jobs h3::before {
+    content: '';
+    display: block;
+    width: 78px;
+    height: 1px;
+    position: relative;
+    bottom: 10px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+footer .time_jobs ul li {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    padding-bottom: 3.5rem;
+}
+
+footer .socials {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+    opacity: 0.6;
+    transition: all .3s;
+}
+
+footer .socials img {
+    margin-right: 25px;
+    width: 2rem;
+    height: 2rem;
+}
+
+footer .location h3 {
+    margin-bottom: 3.4rem;
+    margin-left: 3rem;
+}
+
+footer .location h3::before {
+    content: '';
+    display: block;
+    width: 78px;
+    height: 1px;
+    position: relative;
+    bottom: 10px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+footer .map {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+footer .contacts {
+    display: flex;
+    gap: 2rem;
+    padding: 0 1rem ;
+    margin-left: 20px;
+}
+
+footer .href_up {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+footer .button_up {
+    transform: rotate(-90deg);
+    width: 2rem;
+    height: 2rem;
+    margin-top: -4px;
+}
+
+button, a:hover {
+    cursor: pointer;
+}
+
+header > .container, footer > .container, main > .container, main > .inner_container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.icon {
+    display: none;
+}
+
+.popup {
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+
+    header {
+        height: auto;
+    }
+
+    header > .container, footer > .container, main > .container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    header .brand a::before {
+       display: none;
+    }
+
+    header .brand .desktop img  {
+        display: none;
+    }
+
+    header .brand .mobile img  {
+        display: block;
+        height: 70px;
+        width: 100%;
+        margin-top: 2rem;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    header .connect {
+        height: 28px;
+        display: grid;
+        margin-left: 2rem;
+        margin-top: 35px;
+    }
+
+    .icon {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        background: black;
+        padding: .5rem;
+        border-radius: 5px;
+        margin-left: 5rem;
+        margin-top: 2.5rem;
+    }
+
+    .icon img {
+        width: 100%;
+    }
+
+    header .header_menu {
+        display: none;
+    }
+
+    header .popup {
+        display: none;
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+    header .popup.open {
+        display: block;
+        z-index: 2;
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        background: rgba(0, 0, 0,.8);
+    }
+
+    header .popup nav {
+        display: block;
+    }
+
+    header .popup nav ul {
+        text-align: left;
+    }
+
+    header .popup nav p {
+        padding-left: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 16px ;
+    }
+
+    header .popup.open nav ul {
+        display: grid;
+        margin-top: 30px;
+    }
+
+    header .popup.open a {
+        display: block;
+    }
+
+    footer .container {
+        display: grid;
+    }
+
+    footer .container .brand_info, footer .container .time_jobs, footer .container .location {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer .brand_info .socials {
+        margin-right: 55px;
+    }
+
+    footer .container .time_jobs ul, footer .container .location ul {
+        padding: 0;
+    }
+
+    footer .container .time_jobs .day_week {
+        padding-right: 30px;
+    }
+
+    footer .container .location {
+        margin-bottom: 30px;
+    }
+
+    footer .container .copyright, footer .container .contacts {
+        display: none;
+    }
+}

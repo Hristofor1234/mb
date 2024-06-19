@@ -1,0 +1,58 @@
+main .container {
+    color: black;
+    background-color: white;
+    border-top: 1px solid #dddddd;
+    display: grid;
+}
+
+main .container h2 {
+    font-size: 24px;
+    margin-bottom: 60px;
+    margin-left: 30px;
+    margin-top: 70px;
+}
+
+main .container img {
+    width: 920px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .container .margin {
+    margin: auto;
+    max-width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+main .info_kyrs {
+    display: flex;
+    font-size: large;
+    gap: 7rem;
+    text-align: left;
+    justify-content: left;
+    background: #dddddd;
+}
+
+main .info_kyrs p {
+    padding: 2rem;
+}
+
+main .money_kyrs {
+    font-size: 18px;
+    display: flex;
+    gap: 5rem;
+    justify-content: left;
+    box-sizing: border-box;
+    background-color: #b9dfed;
+}
+
+main .money_kyrs p  {
+    padding: 1rem;
+    font-size: 15px;
+}
+
+main .money_kyrs .rub {
+    margin-left: 30px;
+}

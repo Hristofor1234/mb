@@ -1,0 +1,158 @@
+main .container {
+    display: grid;
+}
+
+main .preview img{
+    width: 1024px;
+    height: 100%;
+}
+
+main .margin {
+    padding: 2rem;
+    background-color: white;
+    color: black;
+}
+
+main .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 16px;
+    font-family: Cactus Classical Serif, serif;
+}
+
+main .about h2 {
+    font-size: 1.2rem;
+    margin-bottom: 55px;
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+main .about_us_one {
+    grid-column-start: 1;
+    padding: 0 15px;
+}
+
+main .about_us_two {
+    padding: 0 15px;
+}
+
+main .info {
+    font-size: 16px;
+    padding: 0 15px;
+    margin-top: 50px;
+}
+
+main .info h2 {
+    margin-bottom: 55px;
+}
+
+main .manager {
+    margin-top: 50px;
+    padding: 0 15px;
+}
+
+main .sell {
+    padding: 0 15px;
+    margin-bottom: 55px;
+}
+
+main .people {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 0 15px;
+    margin-bottom: 45px;
+}
+
+main .photo img {
+    width: 147px;
+    height: 147px;
+}
+
+main .manager {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main .info_people  {
+    font-family: Times New Roman Serif, serif;
+    font-size: 14px;
+}
+
+main .info_people .name {
+    margin:  0 0  5px 0;
+}
+
+main .info_people .profile {
+    margin:  0 0  15px 0;
+}
+
+main .info_people .phone {
+    margin:  0 0  15px 0;
+}
+
+main .info_people .mail {
+    margin:  0 0  15px 0;
+}
+
+main .info_people a{
+    color: #00adef;
+}
+
+@media screen and (max-width: 600px){
+
+    main .info_finance {
+        display: grid;
+    }
+
+    main .container {
+        max-width: 390px;
+        padding: 0;
+    }
+
+    main .product {
+        display: block;
+    }
+
+    main .info {
+        grid-column-start: 1;
+    }
+
+    main img {
+        max-width: 390px;
+        max-height: 170px;
+    }
+
+    main .margin {
+        max-width: 390px;
+        padding: 0;
+    }
+
+    main .about {
+        display: block;
+    }
+
+    main p {
+        font-family: Cactus Classical Serif, serif;
+    }
+
+    main .people {
+        gap: 10px;
+    }
+
+    main .manager {
+        display: block;
+    }
+
+    main .mobile {
+        max-width: 346px;
+    }
+
+    footer .location h3 {
+        margin-left: 5.4rem;
+    }
+
+    hr {
+        display: none;
+    }
+}

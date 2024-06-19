@@ -1,0 +1,50 @@
+main {
+    font-family: Cactus Classical Serif, serif;
+}
+
+main .class_img img {
+    width: 1024px;
+    height: 375px;
+}
+
+main .class_img p {
+    position: absolute;
+    font-size: 30px;
+    margin-top: 150px;
+    margin-left: 40px;
+}
+
+main .class_img p:before {
+    content: '';
+    display: block;
+    width: 72px;
+    height: 3px;
+    background-color: currentColor;
+    position: absolute;
+    top: -28px;
+    left: 0;
+}
+
+main .info {
+    padding:  50px 0;
+}
+
+main span {
+    font-size: 36px;
+}
+
+main .ad {
+    background-color: white;
+    color: black;
+    padding: 0 15px;
+}
+
+main .ad .font-size {
+    font-size: 26px;
+    margin-bottom: 55px;
+    padding-top: 30px;
+}
+
+main .big {
+    font-size: 20px;
+}

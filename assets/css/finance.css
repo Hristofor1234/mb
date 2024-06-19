@@ -1,0 +1,134 @@
+main .container {
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main .info_finance {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main .info_finance a:hover {
+    color: #00adef;
+}
+
+main hr {
+    width: 1024px;
+    background-color: #dddddd;
+    margin: 0;
+}
+
+main .box {
+    width: 260px;
+    height: 206px;
+    background-color: #252525;
+    color: white;
+    margin:  60px 30px;
+}
+
+main .box h2 {
+    font-size: 24px;
+    padding: 30px 0 25px 35px;
+    margin-bottom: 40px;
+}
+
+main .box a {
+    color: #00adef;
+    padding: 30px 0 25px 20px;
+    border-top: 1px solid #dddddd;
+}
+
+main .info {
+    grid-column-start: 2;
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+main .info h2 {
+    margin-bottom: 55px;
+    margin-top: 55px;
+}
+
+main .info img {
+    margin-bottom: 30px;
+    width: 600px;
+}
+
+main .info span {
+    color: #00adef;
+}
+
+main .grid {
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    grid-column-start: 2;
+    margin-top: 55px;
+    justify-content: left;
+    max-width: 595px;
+    margin-bottom: 100px;
+}
+
+main .border_color {
+    background-color: #00adef;
+    color: white;
+    border: 1px solid #000000;
+    outline: 1px solid #000000;
+    padding:  1px;
+}
+
+main .border_color p {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+main .border {
+    border: 1px solid #000000;
+    outline: 1px solid #000000;
+    padding:  1px;
+}
+
+main .border p {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px){
+
+    main .info_finance {
+        display: grid;
+    }
+
+    main .container {
+        max-width: 390px;
+    }
+
+    main .info {
+        max-width: 390px;
+        grid-column-start: 1;
+        margin-left: 10px;
+    }
+
+    main .info img {
+        max-width: 390px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    main .grid {
+        grid-column-start: 1;
+        max-width: 390px;
+        padding: 40px;
+    }
+
+    main .box {
+        display: none;
+    }
+}

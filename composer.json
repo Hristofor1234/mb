@@ -1,0 +1,12 @@
+{
+    "name": "hrist/mercedes-benz",
+    "type": "mercedes",
+    "require": {
+      "ext-mysqli": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "api"
+        }
+    }
+}
